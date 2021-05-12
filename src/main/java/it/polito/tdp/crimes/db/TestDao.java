@@ -8,6 +8,8 @@ public class TestDao {
 		EventsDao dao = new EventsDao();
 		for(Event e : dao.listAllEvents())
 			System.out.println(e);
+		
+		
 	}
 
 }
