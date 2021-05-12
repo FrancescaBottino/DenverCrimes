@@ -8,7 +8,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-import com.sun.tools.javac.util.List;
+import java.util.List;
 
 import it.polito.tdp.crimes.model.Connessione;
 import it.polito.tdp.crimes.model.Model;
@@ -89,7 +89,7 @@ public class FXMLController {
     	
     	List<String> percorso= model.trovaPercorso(arco.getV1(), arco.getV2());
     	
-    	txtResult.appendText("PERCORSO TRA "+ arco.getV1()+" e "+arco.getV2()+ ":\n\n");
+    	txtResult.appendText("PERCORSO TRA: "+ arco.getV1()+" e "+arco.getV2()+ ":\n\n");
     	
     	for(String s: percorso) {
     		txtResult.appendText(s+"\n");
